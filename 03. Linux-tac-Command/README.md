@@ -37,6 +37,8 @@ echo -e "First line\nSecond line\nThird line" > example.txt
 
    This demonstrates how `tac` reverses the lines of a file, displaying them from the last line to the first.
 
+   ![alt text](./images/tac-01.PNG)
+
 2. **Concatenate Multiple Files in Reverse**:
 
    Let's create another file named `example2.txt` with additional content:
@@ -53,14 +55,16 @@ echo -e "First line\nSecond line\nThird line" > example.txt
 
    Output:
    ```
-   Fifth line
-   Fourth line
    Third line
    Second line
    First line
+   Fifth line
+   Fourth line
    ```
 
-   Here, `tac` concatenates and displays the lines from `example2.txt` followed by `example.txt` in reverse order.
+   ![alt text](./images/tac-02.PNG)
+
+   Here, `tac` concatenates and displays the lines from `example.txt` followed by `example2.txt` in reverse order.
 
 3. **Using with Pipes**: Reverse the output of another command. For example, let's use `ls -l` to list files in a directory and then reverse the output with `tac`:
 
@@ -70,11 +74,12 @@ echo -e "First line\nSecond line\nThird line" > example.txt
 
    Output (example):
    ```
-   total 16
    -rw-r--r-- 1 user user   31 Jun 21 12:00 example2.txt
    -rw-r--r-- 1 user user   23 Jun 21 12:00 example.txt
-   drwxr-xr-x 2 user user 4096 Jun 21 12:00 .
+   total 16
    ```
+
+   ![alt text](./images/tac-03.PNG)
 
    Here, `tac` reverses the output of `ls -l`, showing the directory listing from the last entry to the first.
 

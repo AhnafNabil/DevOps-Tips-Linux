@@ -23,7 +23,6 @@ lsns [options]
 ### Options
 
 - `-t, --type <type>`: Filters namespaces by type (e.g., pid, mnt, net).
-- `-u, --user <user>`: Displays namespaces owned by a specific user.
 - `-n, --noheadings`: Suppresses headers in the output.
 
 ### Example Usage
@@ -34,17 +33,24 @@ To list all namespaces on the system:
 lsns
 ```
 
+![alt text](./images/linux-ns-01.PNG)
+
 To list only PID namespaces:
 
 ```bash
 lsns --type pid
 ```
 
-To list namespaces owned by a specific user (replace `<user>` with the username):
+![alt text](./images/linux-ns-02.PNG)
+
+To list namespaces without headers:
 
 ```bash
-lsns --user <user>
+lsns --noheadings
 ```
+
+![alt text](./images/linux-ns-03.PNG)
+
 
 ## List of Linux Namespaces
 

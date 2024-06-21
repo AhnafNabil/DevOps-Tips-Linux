@@ -55,6 +55,8 @@ curl ifconfig.me && echo ""
 
 Similar to the previous command, `&& echo ""` ensures a newline is appended after printing the IP address.
 
+![alt text](./images/pubic-ip-01.PNG)
+
 ## For Production Environments
 
 1. **Using AWS Service**:
